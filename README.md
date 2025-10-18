@@ -1,5 +1,7 @@
 # Minecraft Avatar Generator
 
+[![PyPI version](https://badge.fury.io/py/minecraft-avatar-generator.svg)](https://badge.fury.io/py/minecraft-avatar-generator)
+
 > A command-line utility to generate 2D and 3D isometric renders of Minecraft skins from a player's username, UUID, or skin hash.
 
 ![3D Head Render](examples/head_render.png)

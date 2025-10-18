@@ -4,7 +4,7 @@ version = "0.1.0"
 description = "A command-line utility to generate 2D and 3D isometric renders of Minecraft skins from a player's username, UUID, or skin hash."
 readme = "README.md"
 requires-python = ">=3.13"
-license = { text = "MIT" }
+license = "MIT"
 authors = [
     { name = "soisyhpe", email = "soisyhpe@gmail.com" }
 ]
@@ -12,7 +12,6 @@ classifiers = [
     "Development Status :: 4 - Beta",
     "Environment :: Console",
     "Intended Audience :: Developers",
-    "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.13",
@@ -27,4 +26,13 @@ dependencies = [
 ]
 
 [project.scripts]
-mc-avatar = "render_skin:main"
+mc-avatar = "cli:main"
+
+[project.optional-dependencies]
+dev = [
+    "build",
+    "twine",
+]
+
+[tool.setuptools]
+py-modules = ["cli", "renderer"]

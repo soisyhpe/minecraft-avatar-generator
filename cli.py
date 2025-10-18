@@ -17,7 +17,7 @@ from typing import Optional
 try:
     from PIL import Image
     # Import from our local, copied version of the rendering code
-    from skin_renderer import Skin, Perspective, InputImageException
+    from renderer import Skin, Perspective, InputImageException
 except ImportError as e:
     print(f"Error: Missing required library or module: {e.name}",
           file=sys.stderr)
